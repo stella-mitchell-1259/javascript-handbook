@@ -1,0 +1,199 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh-CN">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>javascript-handbook &mdash; Domain Admin latest 文档</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=9edc463e" />
+
+  
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js?v=1f19b280"></script>
+      <script src="_static/doctools.js?v=888ff710"></script>
+      <script src="_static/sphinx_highlight.js?v=4825356b"></script>
+      <script src="_static/translations.js?v=beaddf03"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="genindex.html" />
+    <link rel="search" title="搜索" href="search.html" />
+    <link rel="next" title="用户手册" href="manual/index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="#" class="icon icon-home">
+            Domain Admin
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="搜索文档" aria-label="搜索文档" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="manual/index.html">用户手册</a></li>
+<li class="toctree-l1"><a class="reference internal" href="manual/install.html">安装方式</a></li>
+<li class="toctree-l1"><a class="reference internal" href="manual/notify.html">通知配置</a></li>
+<li class="toctree-l1"><a class="reference internal" href="manual/ssl-cert.html">SSL证书申请</a></li>
+<li class="toctree-l1"><a class="reference internal" href="manual/question.html">常见问题</a></li>
+<li class="toctree-l1"><a class="reference internal" href="manual/plugins.html">扩展插件</a></li>
+<li class="toctree-l1"><a class="reference internal" href="manual/plan.html">开发计划</a></li>
+<li class="toctree-l1"><a class="reference internal" href="manual/development.html">二次开发</a></li>
+<li class="toctree-l1"><a class="reference internal" href="manual/changelog.html">升级日志</a></li>
+<li class="toctree-l1"><a class="reference internal" href="manual/article.html">相关文章</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="#">Domain Admin</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="页面导航">
+  <ul class="wy-breadcrumbs">
+      <li><a href="#" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">javascript-handbook</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/index.rst.txt" rel="nofollow"> 查看页面源码</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="javascript-handbook">
+<h1>javascript-handbook<a class="headerlink" href="#javascript-handbook" title="此标题的永久链接"></a></h1>
+<p>Notes, scripts and bits around design.</p>
+<p>Just my notes on design.</p>
+<hr class="docutils" />
+<p>Originally based on <cite>``dromara/domain-admin`</cite> &lt;<a class="reference external" href="https://gitee.com/dromara/domain-admin">https://gitee.com/dromara/domain-admin</a>&gt;`_, rebuilt and reorganized for personal use. Upstream license: <strong>MIT</strong>.</p>
+<p>目录</p>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="manual/index.html">用户手册</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="manual/index.html#id2">项目简介</a></li>
+<li class="toctree-l2"><a class="reference internal" href="manual/index.html#id3">使用说明</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="manual/install.html">安装方式</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="manual/install.html#id3">方式一：宝塔面板安装</a></li>
+<li class="toctree-l2"><a class="reference internal" href="manual/install.html#docker">方式二：docker启动</a></li>
+<li class="toctree-l2"><a class="reference internal" href="manual/install.html#id5">方式三：下载源码安装</a></li>
+<li class="toctree-l2"><a class="reference internal" href="manual/install.html#panel">方式四：1Panel面板安装</a></li>
+<li class="toctree-l2"><a class="reference internal" href="manual/install.html#k8s">方式五：k8s部署</a></li>
+<li class="toctree-l2"><a class="reference internal" href="manual/install.html#pip">方式六：pip安装</a></li>
+<li class="toctree-l2"><a class="reference internal" href="manual/install.html#id6">其他部署方式</a></li>
+<li class="toctree-l2"><a class="reference internal" href="manual/install.html#id7">平滑升级</a></li>
+<li class="toctree-l2"><a class="reference internal" href="manual/install.html#id8">可选配置</a></li>
+<li class="toctree-l2"><a class="reference internal" href="manual/install.html#id9">配置参数</a></li>
+<li class="toctree-l2"><a class="reference internal" href="manual/install.html#id10">更新脚本</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="manual/notify.html">通知配置</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="manual/notify.html#id2">1、邮件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="manual/notify.html#webhook">2、WebHook</a></li>
+<li class="toctree-l2"><a class="reference internal" href="manual/notify.html#id9">3、企业微信</a></li>
+<li class="toctree-l2"><a class="reference internal" href="manual/notify.html#id10">4、钉钉</a></li>
+<li class="toctree-l2"><a class="reference internal" href="manual/notify.html#id11">5、飞书</a></li>
+<li class="toctree-l2"><a class="reference internal" href="manual/notify.html#id12">6、模板和参数</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="manual/ssl-cert.html">SSL证书申请</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="manual/ssl-cert.html#id1">1、填写域名</a></li>
+<li class="toctree-l2"><a class="reference internal" href="manual/ssl-cert.html#id2">2、验证域名</a></li>
+<li class="toctree-l2"><a class="reference internal" href="manual/ssl-cert.html#id3">3、下载证书</a></li>
+<li class="toctree-l2"><a class="reference internal" href="manual/ssl-cert.html#id4">4、远程部署</a></li>
+<li class="toctree-l2"><a class="reference internal" href="manual/ssl-cert.html#id5">说明</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="manual/question.html">常见问题</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="manual/question.html#id2">1、暂不支持多进程方式启动</a></li>
+<li class="toctree-l2"><a class="reference internal" href="manual/question.html#id3">2、为什么外网访问不到？</a></li>
+<li class="toctree-l2"><a class="reference internal" href="manual/question.html#windows-fcntl">3、Windows平台启动报错,找不到模块 <code class="docutils literal notranslate"><span class="pre">fcntl</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="manual/question.html#id4">4、添加域名数据后系统异常</a></li>
+<li class="toctree-l2"><a class="reference internal" href="manual/question.html#id5">5、邮件发送失败</a></li>
+<li class="toctree-l2"><a class="reference internal" href="manual/question.html#id6">7、监控域名非443的端口</a></li>
+<li class="toctree-l2"><a class="reference internal" href="manual/question.html#id7">8、修改数据库链接</a></li>
+<li class="toctree-l2"><a class="reference internal" href="manual/question.html#prometheus-metrics">10、支持<code class="docutils literal notranslate"><span class="pre">prometheus</span></code> 的<code class="docutils literal notranslate"><span class="pre">/metrics</span></code>接口</a></li>
+<li class="toctree-l2"><a class="reference internal" href="manual/question.html#id10">11、部分域名无法查询到信息</a></li>
+<li class="toctree-l2"><a class="reference internal" href="manual/question.html#ingress">12、获取ingress的域名</a></li>
+<li class="toctree-l2"><a class="reference internal" href="manual/question.html#id11">13、证书监控原理</a></li>
+<li class="toctree-l2"><a class="reference internal" href="manual/question.html#id12">14、域名监控原理</a></li>
+<li class="toctree-l2"><a class="reference internal" href="manual/question.html#id13">15、提示缺少依赖</a></li>
+<li class="toctree-l2"><a class="reference internal" href="manual/question.html#id14">16、主机地址显示错误</a></li>
+<li class="toctree-l2"><a class="reference internal" href="manual/question.html#admin">17、忘记admin密码怎么办</a></li>
+<li class="toctree-l2"><a class="reference internal" href="manual/question.html#database-is-locked">18、database is locked</a></li>
+<li class="toctree-l2"><a class="reference internal" href="manual/question.html#python2-7">19、Python2.7 依赖问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="manual/question.html#grafana">20、grafana 的展示模版</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="manual/plugins.html">扩展插件</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="manual/plugins.html#domain-admin-cronjob">domain-admin-cronjob</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="manual/plan.html">开发计划</a></li>
+<li class="toctree-l1"><a class="reference internal" href="manual/development.html">二次开发</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="manual/development.html#id2">技术选型</a></li>
+<li class="toctree-l2"><a class="reference internal" href="manual/development.html#id3">接口文档</a></li>
+<li class="toctree-l2"><a class="reference internal" href="manual/development.html#id4">测试证书</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="manual/changelog.html">升级日志</a></li>
+<li class="toctree-l1"><a class="reference internal" href="manual/article.html">相关文章</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="manual/article.html#id2">媒体报道</a></li>
+<li class="toctree-l2"><a class="reference internal" href="manual/article.html#id23">参考文章</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="manual/index.html" class="btn btn-neutral float-right" title="用户手册" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; 版权所有 2023, Peng Shiyu。</p>
+  </div>
+
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用的 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a> 开发.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
